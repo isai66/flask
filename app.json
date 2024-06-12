@@ -1,0 +1,73 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "dime suma",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hola",
+                        "como estás",
+                        "di hola mundo",
+                        "di hola",
+                        "hola mundo"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Suma",
+                    "slots": [
+                        {
+                            "name": "uno",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "dos",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "cual es el resultado de {uno} mas {dos}",
+                        "cuanto es {uno} mas {dos}",
+                        "suma {uno} mas {dos}"
+                    ]
+                },
+                {
+                    "name": "Resta",
+                    "slots": [
+                        {
+                            "name": "uno",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "dos",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Alexa {dos} menos {uno}",
+                        "Alexa cuando es {dos} menos {uno}",
+                        "Alexa resta {dos} menos {uno}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

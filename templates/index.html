@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Género de Canción</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Clasificación de Género de Canción</h1>
+        <form method="post">
+            <label for="liveness">Liveness (1-10):</label>
+            <input type="number" id="liveness" name="liveness" min="1" max="10" required>
+
+            <label for="instrumentalness">Instrumentalness (1-10):</label>
+            <input type="number" id="instrumentalness" name="instrumentalness" min="1" max="10" required>
+
+            <label for="vocalness">Vocalness (1-10):</label>
+            <input type="number" id="vocalness" name="vocalness" min="1" max="10" required>
+
+            <button type="submit">Determinar Género</button>
+        </form>
+
+        {% if genre %}
+            <h2>El género de la canción es: {{ genre }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
