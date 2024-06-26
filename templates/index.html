@@ -6,17 +6,20 @@
 <body>
     <h1>Ingrese los detalles para la predicción de Median Income</h1>
     <form action="/predict" method="post">
-        <label for="latitud">Latitud:</label>
-        <input type="text" id="latitud" name="latitud"><br><br>
+        <label for="latitude">Latitud:</label>
+        <input type="text" id="latitude" name="latitude"><br><br>
         
-        <label for="longitud">Longitud:</label>
-        <input type="text" id="longitud" name="longitud"><br><br>
+        <label for="longitude">Longitud:</label>
+        <input type="text" id="longitude" name="longitude"><br><br>
         
-        <label for="num_cuartos">Número de Cuartos:</label>
-        <input type="text" id="num_cuartos" name="num_cuartos"><br><br>
+        <label for="total_rooms">Número de Cuartos:</label>
+        <input type="text" id="total_rooms" name="total_rooms"><br><br>
         
-        <label for="num_habitaciones">Número de Habitaciones:</label>
-        <input type="text" id="num_habitaciones" name="num_habitaciones"><br><br>
+        <label for="total_bedrooms">Número de Habitaciones:</label>
+        <input type="text" id="total_bedrooms" name="total_bedrooms"><br><br>
+
+        <label for="ocean_proximity">Proximidad al oceano:</label>
+        <input type="text" id="ocean_proximity" name="ocean_proximity"><br><br>
         
         <input type="submit" value="Predecir">
     </form>

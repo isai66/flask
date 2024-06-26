@@ -15,13 +15,15 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
-        latitud = float(request.form['latitud'])
-        longitud = float(request.form['longitud'])
-        num_cuartos = int(request.form['num_cuartos'])
-        num_habitaciones = int(request.form['num_habitaciones'])
+        latitude = float(request.form['latitude'])
+        longitude = float(request.form['longitude'])
+        total_rooms = int(request.form['total_rooms'])
+        total_bedrooms = int(request.form['total_bedrooms'])
+        ocean_proximity = int(request.form['ocean_proximity'])
+
         
         # Crear la matriz de entrada para la predicción
-        input_features = np.array([[latitud, longitud, num_cuartos, num_habitaciones]])
+        input_features = np.array([[latitude, longitude, total_rooms, total_bedrooms, ocean_proximity]])
         
         # Hacer la predicción
         prediction = model.predict(input_features)[0]
